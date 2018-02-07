@@ -1,0 +1,8 @@
+name: awscli
+os: Ubuntu
+os_family: Debian
+version: 201802
+release: 1
+minimum_version: 2017.7.3
+summary: Formula for installing and managing AWS CLI config files
+description: Formula for installing and managing AWS CLI config files
