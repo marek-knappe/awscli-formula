@@ -1,0 +1,11 @@
+{% set awscli = salt['grains.filter_by']({
+    'Debian': {
+        'pip_pkg': 'python-pip',
+    },
+    'RedHat': {
+        'pip_pkg': 'python-pip',
+    },
+    'FreeBSD': {
+        'pip_pkg': 'py27-pip',
+    },
+}, merge=salt['pillar.get']('awscli:lookup')) %}
